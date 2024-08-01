@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.box {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+  width: 50px; /* Largura inicial pequena para demonstrar o crescimento */
+}
+
+/* Aplicando flex-grow */
+.box1 {
+  flex-grow: 1;
+}
+
+.box2 {
+  flex-grow: 2;
+}
+
+.box3 {
+  flex-grow: 3;
+}

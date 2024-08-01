@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo Flex-Basis</title>
+<style>
+  .flex-container {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+    width: 100%; /* Largura completa para facilitar a visualização */
+    height: 150px; /* Altura fixa para visualização */
+    border: 2px solid black; /* Borda para visualizar o container */
+  }
+
+  .box {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px; /* Base inicial comum para comparar efeitos */
+  }
+
+  /* Personalizações individuais */
+  .box1 {
+    flex-basis: 50px; /* Tamanho inicial menor */
+  }
+
+  .box2 {
+    flex-basis: 150px; /* Tamanho inicial maior */
+  }
+
+  .box3 {
+    flex-basis: 20%; /* Tamanho inicial baseado em porcentagem do container */
+  }
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
+</div>
+</body>
+</html>

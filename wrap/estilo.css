@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+  background-color: lightgray;
+  width: 200px; /* Limita a largura do container para demonstrar o wrapping */
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1 0 60px; /* Cada item tentará ter pelo menos 60px de largura */
+}
+
+/* Exemplo com flex-wrap: nowrap */
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Exemplo com flex-wrap: wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Exemplo com flex-wrap: wrap-reverse */
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}

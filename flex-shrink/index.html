@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo de Flex-Shrink</title>
+<style>
+  .flex-container {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+    width: 500px; /* Menor do que a soma dos tamanhos mínimos dos boxes */
+    border: 2px solid black; /* Para visualizar melhor o container */
+  }
+
+  .box {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    width: 200px; /* Largura fixa para cada box */
+    height: 100px; /* Altura fixa para visualização */
+  }
+
+  /* Definindo flex-shrink para cada box */
+  .box1 {
+    flex-shrink: 0; /* Este box não encolherá */
+  }
+
+  .box2 {
+    flex-shrink: 2; /* Este box encolherá duas vezes mais do que o padrão */
+  }
+
+  .box3 {
+    flex-shrink: 1; /* Este box encolherá no padrão */
+  }
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
+</div>
+</body>
+</html>

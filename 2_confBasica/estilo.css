@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    flex-direction: column;
+    /*flex-direction: row; /* Eixo principal horizontal */
+    align-items: center; /* Alinhamento no eixo cruzado */
+    justify-content: space-around; /* Distribuição no eixo principal */
+  }
+  
+  .item {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px; /* Centraliza o texto verticalmente */
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo Flex Abreviado</title>
+<style>
+  .flex-container {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+    width: 100%; /* Largura completa para facilitar a visualização */
+    border: 2px solid black; /* Borda para visualizar o container */
+    height: 200px; /* Altura fixa para melhor visualização */
+  }
+
+  .flex-item {
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    width: 100px; /* Largura inicial para cada item */
+    text-align: center;
+  }
+
+  .flex-item:nth-child(1) {
+    background-color: DodgerBlue;
+    flex: 1;  /* Cresce para ocupar o espaço disponível */
+  }
+
+  .flex-item:nth-child(2) {
+    background-color: MediumSeaGreen;
+    flex: 0 1 auto;  /* Não cresce, mas encolhe conforme necessário */
+  }
+
+  .flex-item:nth-child(3) {
+    background-color: Tomato;
+    flex: none;  /* Não cresce, não encolhe, tamanho baseado no conteúdo */
+  }
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="flex-item">Flex: 1</div>
+  <div class="flex-item">Flex: 0 1 auto</div>
+  <div class="flex-item">Flex: none</div>
+</div>
+</body>
+</html>

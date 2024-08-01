@@ -1,0 +1,50 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  height: 300px; /* Altura suficiente para permitir múltiplas linhas */
+  width: 400px;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 5px;
+  padding: 20px;
+  flex: 1 1 30%; /* Cada item pode encolher ou crescer */
+}
+
+/* Exemplo com align-content: stretch */
+.flex-stretch {
+  align-content: stretch;
+}
+
+/* Exemplo com align-content: flex-start */
+.flex-start {
+  align-content: flex-start;
+}
+
+/* Exemplo com align-content: flex-end */
+.flex-end {
+  align-content: flex-end;
+}
+
+/* Exemplo com align-content: center */
+.flex-center {
+  align-content: center;
+}
+
+/* Exemplo com align-content: space-between */
+.flex-space-between {
+  align-content: space-between;
+}
+
+/* Exemplo com align-content: space-around */
+.flex-space-around {
+  align-content: space-around;
+}
+
+/* Exemplo com align-content: space-evenly */
+.flex-space-evenly {
+  align-content: space-evenly;
+}

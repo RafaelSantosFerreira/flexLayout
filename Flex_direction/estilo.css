@@ -1,0 +1,32 @@
+.flex-container {
+  display: flex;
+  background-color: lightgray;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Exemplo com flex-direction: row */
+.flex-row {
+  flex-direction: row;
+}
+
+/* Exemplo com flex-direction: row-reverse */
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Exemplo com flex-direction: column */
+.flex-column {
+  flex-direction: column;
+}
+
+/* Exemplo com flex-direction: column-reverse */
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}

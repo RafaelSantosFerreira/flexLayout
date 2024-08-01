@@ -1,0 +1,38 @@
+.flex-container {
+  display: flex;
+  background-color: lightgray;
+  height: 200px; /* Definindo altura para visualizar melhor o alinhamento */
+  border: solid;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Exemplo com align-items: stretch */
+.flex-stretch {
+  align-items: stretch;
+}
+
+/* Exemplo com align-items: flex-start */
+.flex-start {
+  align-items: flex-start;
+}
+
+/* Exemplo com align-items: flex-end */
+.flex-end {
+  align-items: flex-end;
+}
+
+/* Exemplo com align-items: center */
+.flex-center {
+  align-items: center;
+}
+
+/* Exemplo com align-items: baseline */
+.flex-baseline {
+  align-items: baseline;
+}
